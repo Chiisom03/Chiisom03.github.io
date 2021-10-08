@@ -1,24 +1,17 @@
-/*===== SCROLL EFFECT =====*/
-const body = document.body,
-    scrollWrap = document.getElementsByClassName("smooth__scroll__wrapper")[0],
-    height = scrollWrap.getBoundingClientRect().height - 1,
-    speed = 0.04;
+//  === BARBA ====
 
-var offset = 0;
+// import barba from '@barba/core'
+// import barbaCss from 'barbaCss';
 
-body.style.height = Math.floor(height) + "px";
+// // tell barba to use css plugins
+// barba.use(barbaCss);
 
-function smoothScroll() {
-    offset += (window.pageYOffset - offset) * speed;
-
-    var scroll = "translateY(-" + offset + "px) translateZ(0)";
-    scrollWrap.style.transform = scroll;
-
-    callScroll = requestAnimationFrame(smoothScroll);
-}
-
-smoothScroll();
-
+// // init barba
+// barba.init({
+//     transitions: [{
+//         once(){}
+//     }]
+// })
 
 /*===== MENU SHOW =====*/
 const showMenu = (toggleId, navId, menuOverlay) => {
@@ -58,69 +51,41 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 
 
 /*===== PROJECT =====*/
-let $cursor = $('.cursor'),
-    $overlay = $('.project__overlay');
+// var $cursor = $(".cursor"),
+// $overlay = $(".project__overlay");
 
-function moveCircle(e) {
-    TweenLite.to($cursor, 0.5, {
-        css: {
-            left: e.pageX,
-            top: e.pageY
-        },
-        delay: 0.03
-    });
-}
+// function moveCircle(e) {
+// TweenLite.to($cursor, 0.5, {
+//   css: {
+//     left: e.pageX,
+//     top: e.pageY
+//   },
+//   delay: 0.03
+// });
+// }
 
-$('.p1').hover(() => {
-    $cursor.css({
-        'background-image': "url(../img/work1.jpg"
-    })
-})
-$('.p2').hover(() => {
-    $cursor.css({
-        'background-image': "url(../img/work2.jpg"
-    })
-})
-$('.p3').hover(() => {
-    $cursor.css({
-        'background-image': 'url(../img/work3.jpg'
-    })
-})
-$('.p4').hover(() => {
-    $cursor.css({
-        'background-image': 'url(../img/work4.jpg'
-    })
-})
+// $(".p1").hover(function() {
+// $(".cursor").css({ "background-image": "url(work6.jpg)" });
+// });
+// $(".p-2").hover(function() {
+// $(".cursor").css({ "background-image": "url(../img/work2.jpg)" });
+// });
+// $(".p-3").hover(function() {
+// $(".cursor").css({ "background-image": "url(../img/work3.jpg)" });
+// });
+// $(".p-4").hover(function() {
+// $(".cursor").css({ "background-image": "url(../img/work4.jpg)" });
+// });
 
-let flag = false;
-$($overlay).mousemove(function () {
-    flag = true;
-    TweenLite.to($cursor, 0.3, {
-        scale: 1,
-        autoAlpha: 1
-    })
-    $($overlay).on('mousemove', moveCircle);
-})
+// var flag = false;
+// $($overlay).mousemove(function() {
+// flag = true;
+// TweenLite.to($cursor, 0.3, { scale: 1, autoAlpha: 1 });
+// $($overlay).on("mousemove", moveCircle);
+// });
 
-$($overlay).mouseout(function () {
-    flag = false;
-    TweenLite.to($cursor, 0.3, {
-        scale: 0.1,
-        autoAlpha: 0
-    })
-})
+// $($overlay).mouseout(function() {
+// flag = false;
+// TweenLite.to($cursor, 0.3, { scale: 0.1, autoAlpha: 0 });
+// });
 
-//  === BARBA ====
-
-// import barba from '@barba/core'
-// import barbaCss from 'barbaCss';
-
-// // tell barba to use css plugins
-// barba.use(barbaCss);
-
-// // init barba
-// barba.init({
-//     transitions: [{
-//         once(){}
-//     }]
-// })
