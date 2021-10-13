@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- <link rel="stylesheet" href="assets/css/styles.css"> -->
+    <link rel="stylesheet" href="assets/app.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- =====BOX ICONS===== -->
@@ -16,19 +17,19 @@
 
 <body id="home" data-barba="wrapper">
     <!--===== HEADER =====-->
-    <main class="l-main" data-barba="container">
+    <main data-barba="container" data-barba-namespace="contact" class="l-main">
+        <div class="transition"></div>
         <div class="main__content">
             <nav class="nav bd-grid">
                 <div>
                     <a href="#" class="nav__logo">Chisom</a>
                 </div>
-    
-                <div class="nav__toggle" id="nav-toggle">
-                    <!-- <i class='bx bx-menu'></i> -->
-                    <span></span>
-                    <span></span>
+
+                <div class="nav__toggle menu__btn" id="nav-toggle">
+                    <span class="icon"></span>
+                    <span class="text">menu</span>
                 </div>
-    
+
                 <div class="menu__overlay" id="menu-overlay"></div>
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
@@ -38,7 +39,7 @@
                         <li class="nav__item"><a href="/project.html" class="nav__link">Projects</a></li>
                         <li class="nav__item"><a href="/contact.html" class="nav__link active">Contacts</a></li>
                     </ul>
-    
+
                     <div class="nav__list menu__contact" style="opacity: 0; transform: translate(-35%, 0px);">
                         <div class="nav__item">
                             <div class="nav__item__data">Get in touch</div>
@@ -48,10 +49,10 @@
                         </div>
                     </div>
                 </div>
-    
+
             </nav>
 
-    
+
             <!--===== SKILLS =====-->
             <!-- <section class="skills section" id="skills">
                     <h2 class="section-title">Skills</h2>
@@ -115,7 +116,7 @@
                         </div>
                     </div>
                 </section> -->
-    
+
 
             <!--===== WORK =====-->
             <!-- <section class="work section" id="work">
@@ -142,10 +143,10 @@
                         </div>
                     </div>
                 </section> -->
-    
+
 
             <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">    
+            <section class="contact section" id="contact">
                 <div class="contact__container bd-grid">
                     <h2 class="form__title">please, do get in touch</h2>
                     <form action="" class="contact__form">
@@ -157,22 +158,21 @@
                 </div>
             </section>
         </div>
-        
 
-            <!--===== FOOTER =====-->
-            <footer class="footer">
-                <p class="footer__title">Now, let's discuss those beautiful ideas</p>
-                <a href="#" class="info__link">info@chiisom03.com</i></a>
-            </footer>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Now, let's discuss those beautiful ideas</p>
+            <a href="#" class="info__link">info@chiisom03.com</i></a>
+        </footer>
     </main>
 
 
     <!--===== SCROLL REVEAL =====-->
-    <script src="assets/@barba/core/dist/barba.mjs"></script>
-    <script src="assets/@barba/core/dist/package/dist/gsap.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/jquery.min.js"></script>
 
     <!--===== MAIN JS =====-->
+    <script src="assets/app.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 

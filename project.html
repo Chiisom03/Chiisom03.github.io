@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- <link rel="stylesheet" href="assets/css/styles.css"> -->
+    <link rel="stylesheet" href="assets/app.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- =====BOX ICONS===== -->
@@ -16,17 +17,17 @@
 
 <body id="home" data-barba="wrapper">
     <!--===== HEADER =====-->
-    <main class="l-main" data-barba="container">
+    <main data-barba="container" data-barba-namespace="project" class="l-main">
+        <div class="transition"></div>
         <div class="main__content">
             <nav class="nav bd-grid">
                 <div>
                     <a href="#" class="nav__logo">Chisom</a>
                 </div>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <!-- <i class='bx bx-menu'></i> -->
-                    <span></span>
-                    <span></span>
+                <div class="nav__toggle menu__btn" id="nav-toggle">
+                    <span class="icon"></span>
+                    <span class="text">menu</span>
                 </div>
 
                 <div class="menu__overlay" id="menu-overlay"></div>
@@ -89,11 +90,10 @@
 
 
     <!--===== SCROLL REVEAL =====-->
-    <script src="assets/@barba/core/dist/barba.mjs"></script>
-    <script src="assets/@barba/core/dist/package/dist/gsap.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/jquery.min.js"></script>
 
     <!--===== MAIN JS =====-->
+    <script src="assets/app.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 

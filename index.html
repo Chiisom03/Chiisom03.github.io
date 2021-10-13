@@ -5,13 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- <link rel="stylesheet" href="assets/css/styles.css"> -->
     <link rel="stylesheet" href="assets/css/style.css">
-    
+    <link rel="stylesheet" href="assets/app.css">
 
     <!-- =====External Scripts===== -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
 
     <!-- =====BOX ICONS===== -->
 
@@ -20,17 +17,17 @@
 
 <body id="home" data-barba="wrapper">
     <!--===== HEADER =====-->
-    <main class="l-main smooth__scroll__wrapper" data-barba="container" data-barba-namespace="home-section">
+    <main class="l-main smooth__scroll__wrapper" data-barba="container" data-barba-namespace="home">
+        <div class="transition"></div>
         <div class="main__content">
             <nav class="nav bd-grid">
                 <div>
                     <a href="#" class="nav__logo">Chisom</a>
                 </div>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <!-- <i class='bx bx-menu'></i> -->
-                    <span></span>
-                    <span></span>
+                <div class="nav__toggle menu__btn" id="nav-toggle">
+                        <span class="icon"></span>
+                        <span class="text">menu</span>
                 </div>
 
                 <div class="menu__overlay" id="menu-overlay"></div>
@@ -58,7 +55,7 @@
             <!--===== HOME =====-->
             <section class="home bd-grid">
                 <div class="home__data">
-                    <h1 class="home__title">hi, I am Chisom, a digital designer based in Lagos. I design amazing web
+                    <h1 class="home__title">hi, I am Chisom, a digital designer based in Lagos. I design amazing user
                         experiences and beautiful interfaces.</h1>
                 </div>
             </section>
@@ -173,16 +170,16 @@
             <p class="footer__title">Now, let's discuss those beautiful ideas</p>
             <a href="#" class="info__link">info@chiisom03.com</i></a>
         </footer>
+        
+        
+        <!--===== SCROLL REVEAL =====-->
+        
+        <script src="assets/js/jquery.min.js"></script>
+        
+        <!--===== MAIN JS =====-->
+        <script src="assets/app.js"></script>
+        <script src="assets/js/main.js"></script>
     </main>
-
-
-    <!--===== SCROLL REVEAL =====-->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/TweenMax.min.js"></script>
-    <!-- <script src="assets/@barba/core/dist/barba.mjs"></script> -->
-
-    <!--===== MAIN JS =====-->
-    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
