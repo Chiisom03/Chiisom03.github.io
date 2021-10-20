@@ -241,13 +241,13 @@ img {
     width: 25px;
   }
   60% {
-    -webkit-transform: translateY(0px) rotate(-45deg);
-            transform: translateY(0px) rotate(-45deg);
+    -webkit-transform: translateY(6px) rotate(-45deg);
+            transform: translateY(6px) rotate(-45deg);
     width: 25px;
   }
   75% {
-    -webkit-transform: translateY(-10px) rotate(-45deg);
-            transform: translateY(-10px) rotate(-45deg);
+    -webkit-transform: translateY(-12.5px) rotate(-45deg);
+            transform: translateY(-12.5px) rotate(-45deg);
     width: 25px;
   }
   100% {
@@ -268,13 +268,13 @@ img {
     width: 25px;
   }
   60% {
-    -webkit-transform: translateY(0px) rotate(-45deg);
-            transform: translateY(0px) rotate(-45deg);
+    -webkit-transform: translateY(6px) rotate(-45deg);
+            transform: translateY(6px) rotate(-45deg);
     width: 25px;
   }
   75% {
-    -webkit-transform: translateY(-5px) rotate(-45deg);
-            transform: translateY(-5px) rotate(-45deg);
+    -webkit-transform: translateY(-12.5px) rotate(-45deg);
+            transform: translateY(-12.5px) rotate(-45deg);
     width: 25px;
   }
   100% {
@@ -533,7 +533,6 @@ img {
   display: block;
   position: relative;
   text-align: center;
-  margin-right: 1.5rem;
   width: 20px;
   height: 65px;
 }
@@ -541,7 +540,7 @@ img {
   content: '';
   right: 0;
   width: 25px;
-  height: 3px;
+  height: 2px;
   background-color: var(--second-color);
   display: block;
   position: absolute;
@@ -552,7 +551,7 @@ img {
           transform-origin: left center;
 }
 .menu__btn:after {
-  top: 9px;
+  top: 7.5px;
   -webkit-transform-origin: right center;
           transform-origin: right center;
 }
@@ -723,16 +722,16 @@ img {
   color: var(--second-color);
   font-size: 25px;
   font-weight: 700;
-  position: fixed;
-  top: 2.3rem;
+  position: absolute;
+  top: 1.5rem;
   z-index: 100;
   transition: .5s;
 }
 
 .nav__toggle {
   position: fixed;
-  top: 2.85rem;
-  right: 2rem;
+  top: 2rem;
+  right: 1.25rem;
   width: 30px;
   height: 30px;
   padding: 1.4px;
@@ -770,6 +769,10 @@ img {
 /*=== Show menu ===*/
 .show {
   right: 0;
+}
+
+.nav__logo__fixed {
+  position: fixed;
 }
 
 /*===== HOME =====*/
