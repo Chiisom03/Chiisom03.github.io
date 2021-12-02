@@ -1,140 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/app.css">
-
-    <!-- =====External Scripts===== -->
-
-    <!-- =====BOX ICONS===== -->
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="dist/tailwind.min.css"> -->
+    <link rel="stylesheet" href="style.css" />
     <title>Chisom</title>
-</head>
-
-<body id="home" data-barba="wrapper">
-    <div class="cursor"></div>
-    
-    <!--===== HEADER =====-->
-    <main class="l-main smooth__scroll__wrapper" data-barba="container" data-barba-namespace="home">
-        <div class="transition"></div>
-        <div class="main__content">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="/index.html" class="nav__logo">Chisom</a>
-                </div>
-                
-                <div class="nav__toggle menu__btn" id="nav-toggle">
-                    <span class="icon"></span>
-                    <span class="text">menu</span>
-                </div>
-                
-                <div class="menu__overlay" id="menu-overlay"></div>
-                <div class="nav__menu" id="nav-menu">
+  </head>
+  <body>
+      <div class="cursor"></div>
+      <main>
+          <div class="main__content">
+              <header>
+                <nav>
+                    <a href="./" class="brand">peter<br> Chisom</a>
                     <ul class="nav__list">
-                        <li class="nav__item menu__title">Menu</li>
-                        <li class="nav__item"><a href="/index.html" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="/about.html" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="/project.html" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="/contact.html" class="nav__link">Contacts</a></li>
+                        <a href="#about" class="nav__item"><li>about</li></a>
+                        <a href="#work" class="nav__item"><li>work</li></a>
+                        <a href="#contact" class="nav__item"><li>contact</li></a>
                     </ul>
-
-                    <div class="nav__list menu__contact" style="opacity: 0; transform: translate(-35%, 0px);">
-                        <div class="nav__item">
-                            <div class="nav__item__data">Get in touch</div>
-                            <div>
-                                <a class="nav__link" href="mailto:info@chiisom03.com"><span>info@Chisom.com</span></a>
+                </nav>
+                <h1 class="header__title">hello.</h1>
+                <!-- <div class="holder">
+                    <img src="girl.jpg" alt="" srcset="">
+                </div> -->
+                <!-- <div class="social">
+                    <div class="icon__list">
+                        <a href="" class="icon facebook"><span>fb.</span></a>
+                        <a href="https://api.whatsapp.com/send?phone=2348186842129&text=Hey%20there%20I%20need%20a%20website" class="icon whatsapp"><span>wht.</span></a>
+                        <a href="" class="icon linkedin"><span>li.</span></a>
+                    </div>
+                </div> -->
+    
+                <!-- <a href="#about">
+                    <div class="scroll">
+                        <span class="scroll__down"></span>
+                    </div>
+                </a> -->
+            </header>
+    
+            <!-- ABOUT SECTION -->
+            <div class="section" id="about">
+                <div class="about">
+                    <h2 class="sub__heading">about me</h2>
+                    <div class="content">
+                        <div class="about__img">
+                            <img src="abt__img.jpg" alt="" srcset="">
+                        </div>
+                        <span class="desc">
+                            <p> with passion of solving problems related to digital designs and development, 
+                                I build amazing web experiences and great interfaces.
+                            </p>
+                            <div class="tech">
+                                <p>wordpress</p>
+                                <p>React JS</p>
+                                <p>adobe XD</p>
                             </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+    
+             <!-- WORK SECTION -->
+            <div id="work">
+                <h2 class="sub__heading">my works</h2>
+                <p>
+                    curiousity leads me to progressive learning of newer technologies
+                    and designs which gives me the super powers to improve the awesome services provided
+                    <br>
+                    with five years of continuous learning and experiments and a passion for creativity that has no limits, I would complete an 
+                    amazing work for you.
+                </p>
+                <div class="project__container">
+                    <div class="wrapper">
+                        <div class="project__cursor"></div>
+                        <div class="project__list">
+                        <div class="project one">
+                            <h2 class="project__title">Candyisland</h1>
+                            <div class="project__overlay"></div>
+                        </div>
+                        <div class="project two">
+                            <h2 class="project__title">Mauritanea</h1>
+                            <div class="project__overlay"></div>
+                        </div>
+                        <div class="project three">
+                            <h2 class="project__title">IvoryCoast</h2>
+                            <div class="project__overlay"></div>
+                        </div>
+                        <div class="project four">
+                            <h2 class="project__title">Facts</h2>
+                            <div class="project__overlay"></div>
+                        </div>
                         </div>
                     </div>
-                </div>
-
-            </nav>
-
-            <!--===== HOME =====-->
-            <section class="home bd-grid">
-                <div class="home__data">
-                    <h1 class="home__title">hi, I am Chisom, a digital designer based in Lagos. I design amazing user
-                        experiences and beautiful interfaces.</h1>
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="" id="about">
-                <div class="about__home about__container bd-grid">
-                    <div class="about__img">
-                        <img src="" alt="">
                     </div>
+            </div>
+    
+            <!-- CONTACT -->
+            <div class="section" id="contact">
+                <div class="contact">
+                    <h2 class="sub__heading"> contact me</h2>
+                    <div class="content">
+                        <form action="">
+                          <div class="input__field">
+                              <label for="first_name">First & Last Name</label>
+                            <input type="text" id="first_name" placeholder="your name goes in here" class="validate">
+                          </div>
+                          <div class="input__field">
+                              <label for="email" data-error="wrong" data-success="right">Email</label>
+                            <input type="email" id="email" placeholder="your email address goes in here" class="validate">
+                          </div>
+                          <div class="input__field">
+                              <label for="textarea1">Subject</label>
+                            <textarea id="textarea1" placeholder="tell me all about the project" class="materialize-textarea"></textarea>
+                          </div>
 
-                    <div>
-                        <p class="sub__data">my curiousity has led me to constant learning of new technlogies and designs which gives me 
-                            the ability to improve the awesome services provided.
-                        </p>
-                        <br>
-                        <p class="sub__data">
-                            With five years of continous learning and experiments, I would complete an amazing work, a passion for creativity that has no limits.
-                        </p>
-                        <br>
-                        <a href="/about.html" class="cta">learn more</a>
+                          <div class="btns">
+                            <button class="form__btn" type="submit">send</button>
+                            <a href="peter__resume.pdf" class="form__btn">download CV</a>
+                          </div>
+                        </form>
                     </div>
                 </div>
-            </section>
-
-            <!--===== PROJECTS =====-->
-            <!-- <section class="project section" id="work">
-                <div class="work__container bd-grid">
-                    <div class="project__left">
-                       <div class="project__content">
-                        <span class="project__num">01</span>
-                        <h2 class="project__title">Facts 'n' fact with Aunt Wray</h2>
-                        <p class="project__desc">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium architecto assumenda
-                            aliquam.
-                            Ipsa minima minus quas! Officiis hic amet dolore adipisci.
-                        </p>
-                        <br>
-                        <a href="/project.html" class="cta">view case</a>
-                       </div>
-
-                       <div class="project__content">
-                        <span class="project__num">02</span>
-                        <h2 class="project__title">Facts 'n' fact with Aunt Wray</h2>
-                        <p class="project__desc">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium architecto assumenda
-                            aliquam.
-                            Ipsa minima minus quas! Officiis hic amet dolore adipisci.
-                        </p>
-                        <br>
-                        <a href="/project.html" class="cta">view case</a>
-                       </div>
-                    </div>
-                    <div class="project__right">
-                        <img src="assets/img/work1.jpg" alt=""><br>
-                        <img src="assets/img/work1.jpg" alt=""><br>
-                    </div>
-                </div>
-            </section> -->
-
+            </div>
         </div>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Now, let's discuss those beautiful ideas</p>
-            <a href="#" class="info__link">info@chiisom03.com</i></a>
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer__content">
+                <h2 class="sub__heading">Let's create something new together</h2>
+                <ul class="job__items">
+                    <a href=""><li>web design</li></a>
+                    <a href=""><li>mobile app</li></a>
+                    <a href=""><li>prototyping</li></a>
+                </ul>
+                <div class="copyright">
+                    <a target="blank" href="mailto:hey@chiisom03@gmail.com">hey@chiisom03.github.io</a>
+                    <a href="tel:+2347088898247">+2347088898247</a>
+                </div>
+            </div>
+            
         </footer>
-
-
-        <!--===== SCROLL REVEAL =====-->
-
-        <script src="assets/js/jquery.min.js"></script>
-
-        <!--===== MAIN JS =====-->
-        <script src="assets/app.js"></script>
-        <script src="assets/js/main.js"></script>
     </main>
-</body>
+    
 
+    <script src="jquery.min.js"></script>
+    <script src="TweenMax.min.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
